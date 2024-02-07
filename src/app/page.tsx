@@ -1,3 +1,9 @@
+import { styled } from '../../stitches.config'
+
+const Text = styled('h1', {
+  color: '$gray700',
+})
+
 export default function Home() {
-  return <h1>Hello World</h1>
+  return <Text>Hello World</Text>
 }
