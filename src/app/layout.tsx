@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 const globalStyles = globalCss({
   '*': { margin: 0, padding: 0, boxSizing: 'border-box' },
+  body: { paddingInline: '1.2rem', paddingBlock: '0.6rem', color: '$gray700' },
 })
 
 export default function RootLayout({
