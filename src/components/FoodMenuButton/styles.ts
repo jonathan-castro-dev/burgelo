@@ -21,4 +21,11 @@ export const Button = styled('button', {
     color: '$gray700',
     fontSize: '2.8rem',
   },
+  variants: {
+    active: {
+      true: {
+        color: '$yellow',
+      },
+    },
+  },
 })
