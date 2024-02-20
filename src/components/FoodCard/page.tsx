@@ -1,15 +1,16 @@
 import Image from 'next/image'
-import { FaShoppingCart } from 'react-icons/fa'
+import { AddToCartButton } from '../AddToCartButton/page'
 
 import { Card } from './styles'
 
 interface FoodCardProps {
+  id: number
   image: string
   title: string
   price: number
 }
 
-export function FoodCard({ image, title, price }: FoodCardProps) {
+export function FoodCard({ id, image, title, price }: FoodCardProps) {
   const formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -23,10 +24,7 @@ export function FoodCard({ image, title, price }: FoodCardProps) {
         <h3>{title}</h3>
         <strong>{formattedPrice}</strong>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-        <button>
-          <FaShoppingCart size={13} />
-          adicionar ao carrinho
-        </button>
+        <AddToCartButton foodId={id} />
       </div>
     </Card>
   )

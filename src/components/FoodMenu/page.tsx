@@ -58,7 +58,8 @@ export function FoodMenu() {
           .filter((food) => food.type === activeButton)
           .map((food) => (
             <FoodCard
-              key={food.title}
+              key={food.id}
+              id={food.id}
               title={food.title}
               image={food.image}
               price={food.price}
