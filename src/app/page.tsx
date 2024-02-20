@@ -4,10 +4,10 @@ import { NavMenu } from '@/components/NavMenu/page'
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
       <NavMenu />
       <FoodMenu />
-    </>
+    </div>
   )
 }

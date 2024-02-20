@@ -1,18 +1,15 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import { globalCss, getCssText } from '../../stitches.config'
 import { CartProvider } from '@/contexts/cart-context'
+
+import { getCssText } from '../../stitches.config'
+import { globalStyles } from './global'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
 export const metadata: Metadata = {
   title: 'Burgelo',
 }
-
-const globalStyles = globalCss({
-  '*': { margin: 0, padding: 0, boxSizing: 'border-box' },
-  body: { paddingInline: '1.2rem', paddingBlock: '0.6rem', color: '$gray700' },
-})
 
 export default function RootLayout({
   children,
