@@ -11,4 +11,9 @@ export const { styled, getCssText, globalCss } = createStitches({
       white: '#fff',
     },
   },
+  media: {
+    sm: '(min-width: 340px)',
+    md: '(min-width: 960px)',
+    lg: '(min-width: 1024px)',
+  },
 })
