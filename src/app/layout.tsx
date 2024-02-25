@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { CartProvider } from '@/contexts/cart-context'
+import { DrawerProvider } from '@/contexts/drawer-context'
 
 import { getCssText } from '../../stitches.config'
 import { globalStyles } from './global'
@@ -27,7 +28,9 @@ export default function RootLayout({
         />
       </head>
       <body className={roboto.className}>
-        <CartProvider>{children}</CartProvider>
+        <DrawerProvider>
+          <CartProvider>{children}</CartProvider>
+        </DrawerProvider>
       </body>
     </html>
   )

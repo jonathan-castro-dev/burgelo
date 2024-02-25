@@ -18,7 +18,14 @@ export function FoodCard({ id, image, title, price }: FoodCardProps) {
 
   return (
     <Card>
-      <Image src={image} alt="" width={180} height={150} quality={100} />
+      <Image
+        src={image}
+        alt=""
+        width={180}
+        height={150}
+        quality={100}
+        priority
+      />
 
       <div className="food-content">
         <h3>{title}</h3>

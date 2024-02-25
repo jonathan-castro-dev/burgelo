@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode, createContext, useContext, useState } from 'react'
 
 interface DrawerContextType {
@@ -15,7 +17,7 @@ export function DrawerProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <DrawerContext.Provider value={{ toogleDrawer, isOpen: isDrawerOpen }}>
+    <DrawerContext.Provider value={{ isOpen: isDrawerOpen, toogleDrawer }}>
       {children}
     </DrawerContext.Provider>
   )
