@@ -1,12 +1,11 @@
 import { CartWidget } from '../CartWidget/page'
 import { FaFacebookF, FaPinterest, FaInstagram } from 'react-icons/fa'
 
-import { Flex, SocialLinks } from './styles'
+import { Flex } from './styles'
 
 export function NavMenu() {
   return (
     <Flex>
-      <div className="sr-only"></div>
       <ul>
         <a href="">
           <li>home</li>
@@ -24,20 +23,18 @@ export function NavMenu() {
           <li>contact</li>
         </a>
       </ul>
-      <div className="secondary-menu">
-        <SocialLinks>
-          <a href="">
-            <FaFacebookF color="#333333" size={19} />
-          </a>
-          <a href="">
-            <FaPinterest color="#333333" size={19} />
-          </a>
-          <a href="">
-            <FaInstagram color="#333333" size={19} />
-          </a>
-        </SocialLinks>
-        <CartWidget />
+      <div className="social-menu">
+        <a href="">
+          <FaFacebookF color="#333333" size={19} />
+        </a>
+        <a href="">
+          <FaPinterest color="#333333" size={19} />
+        </a>
+        <a href="">
+          <FaInstagram color="#333333" size={19} />
+        </a>
       </div>
+      <CartWidget />
     </Flex>
   )
 }

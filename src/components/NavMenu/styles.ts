@@ -3,16 +3,24 @@ import { styled } from '@/../stitches.config'
 export const Flex = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between',
   marginTop: '1rem',
-  '& .sr-only': {
-    width: '10rem',
+  '@sm': {
+    justifyContent: 'space-between',
+  },
+  '@md': {
+    justifyContent: 'flex-end',
   },
   '& ul': {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1.6rem',
-    listStyle: 'none',
+    '@sm': {
+      display: 'none',
+    },
+    '@md': {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '1.6rem',
+      marginRight: '20rem',
+      listStyle: 'none',
+    },
   },
   '& ul a': {
     textDecoration: 'none',
@@ -24,19 +32,13 @@ export const Flex = styled('div', {
   '& ul a:hover': {
     color: '$yellow',
   },
-  '& .secondary-menu': {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '4rem',
-  },
-})
-
-export const SocialLinks = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  gap: '0.8rem',
-  '& svg:hover': {
-    fill: '$yellow',
+  '& .social-menu': {
+    marginRight: '4rem',
+    '& a + a': {
+      marginLeft: '0.8rem',
+    },
+    '& a svg:hover': {
+      fill: '$yellow',
+    },
   },
 })
