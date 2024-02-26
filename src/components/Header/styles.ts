@@ -6,25 +6,9 @@ export const Flex = styled('div', {
   justifyContent: 'space-between',
   '& a': {
     '@sm': {
-      position: 'absolute',
-      width: '1px',
-      height: '1px',
-      padding: '0',
-      margin: '-1px',
-      overflow: 'hidden',
-      clip: 'rect(0, 0, 0, 0)',
-      whiteSpace: 'nowrap',
-      borderWidth: '0',
+      display: 'none',
     },
     '@md': {
-      position: 'static',
-      width: 'auto',
-      height: 'auto',
-      padding: '0',
-      margin: '0',
-      overflow: 'visible',
-      clip: 'auto',
-      whiteSpace: 'normal',
       display: 'flex',
       alignItems: 'center',
       gap: '0.8rem',
@@ -49,25 +33,41 @@ export const Flex = styled('div', {
   },
   '& .location': {
     '@sm': {
-      position: 'absolute',
-      width: '1px',
-      height: '1px',
-      padding: '0',
-      clip: 'rect(0, 0, 0, 0)',
-      margin: '-1px',
-      overflow: 'hidden',
-      whiteSpace: 'nowrap',
-      borderWidth: '0',
+      display: 'none',
     },
     '@md': {
-      position: 'static',
-      width: 'auto',
-      height: 'auto',
-      padding: '0',
-      margin: '0',
-      overflow: 'visible',
-      clip: 'auto',
-      whiteSpace: 'normal',
+      display: 'block',
     },
+  },
+})
+
+export const Div = styled('div', {
+  '@sm': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem',
+  },
+  '@md': {
+    display: 'none',
+  },
+  '& a': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+    textDecoration: 'none',
+    fontSize: '1.2rem',
+    color: '$gray700',
+
+    transition: 'color 0.3s',
+    '&:hover': {
+      color: '$yellow',
+    },
+  },
+  '& div': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
   },
 })
