@@ -19,7 +19,7 @@
 <h2>🎨 Layout</h2>
 
 <p align="center">
-    <img src="https://github.com/jonathan-castro-dev/burguelo/blob/main/public/homepage-burguelo.png" alt="Home page" width="400px" height="195px">
+    <img src="https://github.com/jonathan-castro-dev/burgelo/blob/main/public/homepage-burgelo.png" alt="Home page" width="400px" height="195px">
 </p>
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
