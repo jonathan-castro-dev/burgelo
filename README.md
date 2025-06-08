@@ -70,4 +70,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 ---
 
-Feito com ♥ por John Castro :wave: [Entre em contato!](https://www.linkedin.com/in/jonathan-castro-dev/)
+Feito com ♥ por Jonathan Castro :wave: [Entre em contato!](https://www.linkedin.com/in/jonathan-castro-dev/)
